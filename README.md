@@ -15,6 +15,6 @@
 - Requests
 
 ## Planowane usprawnienia:
-- [ ] Przeniesienie kluczy do zmiennych środowiskowych (.env).
+- [x] Przeniesienie kluczy do zmiennych środowiskowych (.env).
 - [ ] Refaktoryzacja kodu (rozbicie kodu na mniejsze funkcje).
 - [ ] Implementacja bazy danych zamiast pliku tekstowego.
