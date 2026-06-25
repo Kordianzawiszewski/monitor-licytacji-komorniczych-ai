@@ -18,11 +18,11 @@ user_agents = [
 ]
 headers = {'User-Agent': random.choice(user_agents)}
 
-TOKEN = "CHAT_TOKEN"
-CHAT_ID = "TELEGRAM_CHAT_ID"
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# api gemini
-client = genai.Client(api_key="GEMINI_API_KEY")
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 def analyze_car(data_for_ai, images=None):
